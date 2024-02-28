@@ -47,6 +47,11 @@ declare global {
       'common.drawerLayoutPosition': 'left' | 'right'
 
       /**
+       * 启用首页滑动
+       */
+      'common.homePageScroll': boolean
+
+      /**
        * 是否显示返回按钮
        */
       'common.showBackBtn': boolean
@@ -55,6 +60,11 @@ declare global {
        * 是否显示退出按钮
        */
       'common.showExitBtn': boolean
+
+      /**
+       * 使用系统文件选择器
+       */
+      'common.useSystemFileSelector': boolean
 
       /**
        * 主题id
@@ -75,6 +85,16 @@ declare global {
        * 隐藏黑色主题背景
        */
       'theme.hideBgDark': boolean
+
+      /**
+       * 动态背景
+       */
+      'theme.dynamicBg': boolean
+
+      /**
+       * 字体阴影
+       */
+      'theme.fontShadow': boolean
 
       /**
            * 启动时自动播放歌曲
@@ -122,9 +142,19 @@ declare global {
       'player.timeoutExitPlayed': boolean
 
       /**
+       * 点击相同列表内的歌曲切歌时是否清空已播放列表（随机模式下列表内所有歌曲会重新参与随机）
+       */
+      'player.isAutoCleanPlayedList': boolean
+
+      /**
        * 其他应用播放声音时是否自动暂停
        */
       'player.isHandleAudioFocus': boolean
+
+      /**
+       * 是否启用音频卸载功能（这可以节省耗电量，没有播放异常问题不建议关闭）
+       */
+      'player.isEnableAudioOffload': boolean
 
       /**
        * 是否显示歌词翻译
@@ -170,6 +200,11 @@ declare global {
        * 横屏歌词字体大小
        */
       'playDetail.horizontal.style.lrcFontSize': number
+
+      /**
+       * 播放详情页-是否允许通过歌词调整播放进度
+       */
+      'playDetail.isShowLyricProgressSetting': boolean
 
       /**
        * 是否启用桌面歌词
@@ -265,6 +300,16 @@ declare global {
        * 是否显示歌曲来源（仅对我的列表有效）
        */
       'list.isShowSource': boolean
+
+      /**
+       * 是否显示歌曲专辑名
+       */
+      'list.isShowAlbumName': boolean
+
+      /**
+       * 是否显示歌曲时长
+       */
+      'list.isShowInterval': boolean
 
       /**
        * 是否自动恢复列表滚动位置（仅对我的列表有效）

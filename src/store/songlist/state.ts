@@ -52,7 +52,7 @@ export declare interface ListInfo {
 export declare interface ListDetailInfo {
   list: LX.Music.MusicInfoOnline[]
   source: LX.OnlineSource
-  desc: string | null
+  // desc: string | null
   total: number
   page: number
   limit: number
@@ -79,7 +79,6 @@ export interface InitState {
   sortList: Partial<Record<Source, SortInfo[]>>
   tags: Tags
   listInfo: ListInfo
-  selectListInfo: ListInfoItem
   listDetailInfo: ListDetailInfo
 }
 
@@ -99,21 +98,10 @@ const state: InitState = {
     tagId: '',
     sortId: '',
   },
-  selectListInfo: {
-    play_count: '',
-    id: '',
-    author: '',
-    name: '',
-    time: '',
-    img: '',
-    // grade: basic.favorcnt / 10,
-    desc: '',
-    source: 'kw',
-  },
   listDetailInfo: {
     list: [],
     id: '',
-    desc: null,
+    // desc: null,
     total: 0,
     page: 1,
     limit: 30,
